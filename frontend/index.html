@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GradeSecure — Manage grades, track performance, generate reports.">
+    <title>GradeSecure — Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-brand">
+            <h1><i class="bi bi-shield-lock-fill" style="margin-right:0.5rem"></i>GradeSecure</h1>
+            <p>Streamline grade management for your institution. Create classes, track student performance, and generate reports — all in one place.</p>
+            <ul class="features">
+                <li><i class="bi bi-check-circle-fill"></i> Class & student management</li>
+                <li><i class="bi bi-check-circle-fill"></i> Interactive grade spreadsheet</li>
+                <li><i class="bi bi-check-circle-fill"></i> Automated grade ranking</li>
+                <li><i class="bi bi-check-circle-fill"></i> CSV report export</li>
+                <li><i class="bi bi-check-circle-fill"></i> Full audit trail</li>
+            </ul>
+        </div>
+
+        <div class="login-form-section">
+            <div class="login-form-wrapper">
+                <h2>Sign in</h2>
+                <p class="subtitle">Enter your credentials to access your account.</p>
+
+                <div id="loginError" class="alert-bar error" style="display:none;">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <span id="loginErrorText"></span>
+                </div>
+
+                <form id="loginForm" autocomplete="off">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-input" id="username" placeholder="Enter your username" required autofocus>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-input" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" id="loginBtn">
+                        Sign in
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
